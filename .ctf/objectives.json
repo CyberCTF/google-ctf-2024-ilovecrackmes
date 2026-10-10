@@ -1,0 +1,45 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Crack the crackme",
+      "prompt": "Solve the encrypted crackme so that the service prints the flag.",
+      "check": {
+        "evidence": "SECRET",
+        "format": "CTF{%s}"
+      },
+      "dev": "CTF{dev-google-ctf-2024-ilovecrackmes}",
+      "hints": [
+        "The crackme computes on encrypted values.",
+        "What can you compute on ciphertexts without the private key?"
+      ],
+      "steps": [
+        {
+          "key": "cryptosystem",
+          "title": "Identify the cryptosystem",
+          "prompt": "Which public-key cryptosystem does the crackme use?",
+          "check": {
+            "answer": [
+              "paillier",
+              "paillier cryptosystem"
+            ]
+          }
+        },
+        {
+          "key": "property",
+          "title": "Name the property",
+          "prompt": "Which property lets you compute on ciphertexts without decrypting?",
+          "check": {
+            "answer": [
+              "homomorphic",
+              "homomorphism",
+              "additive homomorphism",
+              "additively homomorphic",
+              "homomorphic encryption"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
