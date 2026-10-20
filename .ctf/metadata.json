@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-google-ctf-2024-ilovecrackmes",
+  "slug": "google-ctf-2024-ilovecrackmes",
   "title": "Google CTF 2024: ilovecrackmes",
   "description": "A crackme built on Paillier public-key cryptography that the server runs on your input.",
-  "question": "Solve the encrypted crackme and get the flag.",
-  "category": "REV",
+  "category": "rev",
   "difficulty": 3,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Solve the encrypted crackme and get the flag."
 }
